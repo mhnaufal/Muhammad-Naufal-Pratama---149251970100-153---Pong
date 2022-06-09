@@ -36,6 +36,7 @@ public class GerakanRaketKiri : MonoBehaviour
 
 	private void MoveRaket(Vector2 movement)
 	{
+		Debug.Log("SPEED: " + movement);
 		rigid.velocity = movement;
 	}
 }
