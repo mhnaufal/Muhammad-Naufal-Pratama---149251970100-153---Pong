@@ -17,6 +17,7 @@ public class GerakanBola : MonoBehaviour
 
 	public void ResetBall()
 	{
+        rigid.velocity = new Vector2(5, 1.25f);
 		transform.position = new Vector3(resetPosition.x, resetPosition.y, 2);
 	}
 

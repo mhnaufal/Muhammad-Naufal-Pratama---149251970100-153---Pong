@@ -14,5 +14,11 @@ public class MenuUtama : MonoBehaviour
 	public void OpenAuthor()
 	{
 		Debug.Log("Created by Muhammad Naufal Pratama - 149251970100-153");
+		SceneManager.LoadScene("MenuCredits");
+	}
+
+	public void BackToMenuUtama()
+	{
+		SceneManager.LoadScene("MenuUtama");
 	}
 }

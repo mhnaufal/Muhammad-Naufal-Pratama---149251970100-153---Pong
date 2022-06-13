@@ -36,6 +36,6 @@ public class Score : MonoBehaviour
 
 	public void GameOver()
 	{
-		SceneManager.LoadScene("Menu Utama");
+		SceneManager.LoadScene("MenuUtama");
 	}
 }
