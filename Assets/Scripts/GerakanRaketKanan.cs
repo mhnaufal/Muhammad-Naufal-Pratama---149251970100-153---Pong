@@ -36,7 +36,12 @@ public class GerakanRaketKanan : MonoBehaviour
 
 	private void MoveRaket(Vector2 movement)
 	{
-		Debug.Log("SPEED: " + movement);
+		// Debug.Log("SPEED: " + movement);
 		rigid.velocity = movement;
+	}
+
+	public void setSpeed(int newSpeed)
+	{
+		speed = newSpeed;
 	}
 }

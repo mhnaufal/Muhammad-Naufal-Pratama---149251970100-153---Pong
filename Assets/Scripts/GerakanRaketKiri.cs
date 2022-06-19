@@ -7,6 +7,7 @@ public class GerakanRaketKiri : MonoBehaviour
 	private Vector2 movement;
 	private Rigidbody2D rigid;
 	public int speed = 5;
+	GameObject raketKiri;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class GerakanRaketKiri : MonoBehaviour
 	{
 		if (Input.GetKey(KeyCode.W)) 
 		{
-			return	movement = Vector2.up * speed;
+			return movement = Vector2.up * speed;
 		} 
 		else if (Input.GetKey(KeyCode.S))
 		{
@@ -36,7 +37,12 @@ public class GerakanRaketKiri : MonoBehaviour
 
 	private void MoveRaket(Vector2 movement)
 	{
-		Debug.Log("SPEED: " + movement);
+		// Debug.Log("SPEED: " + movement);
 		rigid.velocity = movement;
+	}
+
+	public void setSpeed(int newSpeed)
+	{
+		speed = newSpeed;
 	}
 }
